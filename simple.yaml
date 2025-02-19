@@ -1,5 +1,5 @@
 - name: This is my first playbook
-  host: all
+  hosts: all
   tasks:
      - name: Print message
        debug:                       # debug in Ansible is similar to println in Python
