@@ -12,4 +12,4 @@
 
     - name: through prompt
       debug:
-        msg: "welcome {{student_name}} to mentore solution. "
+        msg: "welcome {{students_name}} to mentore solution. "
