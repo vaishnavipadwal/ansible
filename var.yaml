@@ -1,4 +1,4 @@
-- name: This is my first playbook
+- name: This include var.txt file and vars promts"
   hosts: all
   vars_files: 
       - ./var.txt
