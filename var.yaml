@@ -1,0 +1,8 @@
+- name: This is my first playbook
+  hosts: all
+  vars_file: 
+    - ./var.txt
+  tasks:
+    - name: using varibal file 
+      debug:
+        msg: "welcome {{ student }} to mentore solution/tech. "
