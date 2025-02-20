@@ -1,0 +1,13 @@
+- name: This task include global andn local variable   
+  hosts: all
+  vars: 
+    global: "Students"
+    tasks: 
+      - name: using global variable
+        debug: 
+          msg: "Hello {{global}}, welcome to learning ansible."
+      - name: using local variable
+        debug: 
+          msg: "Hello {{local}}, welocme to learning ansible."
+          vars: 
+          local: "Vaishnavi"
