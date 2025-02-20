@@ -1,7 +1,7 @@
 - name: This is my first playbook
   hosts: all
-  vars_file: 
-    - ./var.txt
+  vars_files: 
+      - ./var.txt
   tasks:
     - name: using varibal file 
       debug:
