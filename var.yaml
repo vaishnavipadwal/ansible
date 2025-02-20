@@ -2,7 +2,14 @@
   hosts: all
   vars_files: 
       - ./var.txt
+  vars_prompt:
+        name: students_name
+        prompt: "Tell me your name"
   tasks:
     - name: using varibal file 
       debug:
-        msg: "welcome {{ student }} to mentore solution/tech. "
+        msg: "welcome {{ student }} to mentore solution/tech."
+
+    - name: through prompt
+      debug:
+        msg: "welcome {{student_name}} to mentore solution. "
