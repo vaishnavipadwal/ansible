@@ -1,0 +1,16 @@
+- name: applying conditions 
+  hosts: all
+  become: true
+  tasks:
+    - name: install httpd
+      yum: 
+        - name: httpd
+          state: latest
+      when: ansible_os_family=="Debian"
+
+    - name: install apache2
+      apt: 
+        - name: apache2
+          state: latest
+      when: ansible_os_family=="RedHat"
+      
