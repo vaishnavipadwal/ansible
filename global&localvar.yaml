@@ -6,9 +6,10 @@
       - name: using global variable
         debug: 
           msg: "Hello {{ global_var }} , welcome to learning ansible."
-          
+
       - name: using local variable
+        vars: 
+            local_var: "Vaishnavi"
         debug: 
           msg: "Hello {{ local_var }} , welocme to learning ansible."
-          vars: 
-          local_var: "Vaishnavi"
+          
