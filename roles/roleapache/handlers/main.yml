@@ -1,2 +1,5 @@
----
-# handlers file for roleapache
+- name: restart service
+  service:
+     name: "{{package}}"
+     state: restarted
+     enable: true
