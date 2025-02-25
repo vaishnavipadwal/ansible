@@ -1,4 +1,4 @@
 - name: execute my role
   hosts: all
   roles:
-   - roleapache
+    - roleapache
